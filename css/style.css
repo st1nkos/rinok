@@ -41,16 +41,24 @@ a.logo {
 
 .headerMainFon {
   background: #1e2b3c url(../Img/fon.jpg) repeat-x;
-  height: 570px;
+  height: 425px;
 }
 
 .headerMainInfo {
-  width: 1080px;
+  width: 1200px;
   margin: 0 auto;
   display: grid;
   gap: 0px 0px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   padding-right: 190px;
+}
+
+.squareRightInfo li {
+  color: #fff;
+  list-style: square;
+  font-size: 14px;
+  margin-left: 90px;
+  margin-top: 30px;
 }
 
 .rubricator {
@@ -106,25 +114,58 @@ a.logo {
 }
 
  */
+.hotFon {
+  height: 435px;
+  background: rgb(152, 154, 156) url(../grayGradient.jpg) repeat-x;
+}
+.hotHeader {
+  background: #0e84ac;
+  padding: 5px;
+}
+
+.hotHeader h4 {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.hotWrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.hotWrapper div img {
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+}
+
+.hotWrapper div p {
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+}
 
 .slogan {
   text-align: center;
-  font-size: 16px;
-  color: #fff;
+  font-size: 18px;
+  color: #000;
   margin-left: 140px;
-  padding: 30px;
+  padding: 10px;
 }
 
 .skidka {
   text-align: center;
   font-size: 16px;
-  color: #fff;
-  margin-left: 140px;
+  color: #000;
+  margin-left: 350px;
 }
 
 .skidka img {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
 }
 
 a:hover {
@@ -137,7 +178,7 @@ a:hover {
 }
 
 .aboutCompanyFon {
-  height: 300px;
+  height: 200px;
   background: rgb(152, 154, 156) url(../grayGradient.jpg) repeat-x;
 }
 
@@ -219,6 +260,11 @@ footer {
   width: 1180px;
   margin: 0 auto;
   padding-top: 15px;
+}
+
+.aboutCompanyDocsFon {
+  height: 350px;
+  background: rgb(152, 154, 156) url(../grayGradient.jpg) repeat-x repeat-y;
 }
 
 .aboutCompanyDocs .docs {
