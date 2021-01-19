@@ -35,7 +35,7 @@ let popupOpen = (curentPopup) => {
         if (popupActive) {
             popupClose(popupActive, false)
         } else {
-            bodyLock()
+            // bodyUnLock() не работает при адаптиной версте 
         }
         curentPopup.classList.add('open')
         curentPopup.addEventListener('click', (e) => {
@@ -56,22 +56,22 @@ let popupClose = (popupActive, doUnlock = true) => {
 
 }
 
-let bodyLock = () => {
-    const lockPaddingValue = window.innerWidth - document.querySelector('.wrapperAll').offsetWidth + 'px'
-    if (lockPadding.length > 0) {
-        for (let i = 0; i < lockPadding.length; i++) {
-            const el = lockPadding[i]
-            el.style.paddingRight = lockPaddingValue
-        }
-    }
-    body.style.paddingRight = lockPaddingValue
-    body.classList.add('lock')
+// let bodyLock = () => {
+//     const lockPaddingValue = window.innerWidth - document.querySelector('.wrapperAll').offsetWidth + 'px'
+//     if (lockPadding.length > 0) {
+//         for (let i = 0; i < lockPadding.length; i++) {
+//             const el = lockPadding[i]
+//             el.style.paddingRight = lockPaddingValue
+//         }
+//     }
+//     body.style.paddingRight = lockPaddingValue
+//     body.classList.add('lock')
 
-    unlock = false
-    setTimeout(() => {
-        unlock = true
-    }, timeout)
-}
+//     unlock = false
+//     setTimeout(() => {
+//         unlock = true
+//     }, timeout)
+// }
 
 let bodyUnLock = () => {
     setTimeout(() => {

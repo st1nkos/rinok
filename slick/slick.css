@@ -100,3 +100,9 @@
 .slick-arrow.slick-hidden {
   display: none;
 }
+
+@media screen and (max-width: 767px) {
+  .slick-slider {
+    display: none;
+  }
+}

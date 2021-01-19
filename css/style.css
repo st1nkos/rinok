@@ -17,9 +17,13 @@ a {
   text-decoration: none;
   color: #808080;
 }
+/* .wrapperAll {
+  max-width: 1180px;
+  margin: 0 auto;
+} */
 .wrapper {
   margin: 0 auto;
-  width: 1180px;
+  max-width: 1180px;
 }
 
 header {
@@ -54,7 +58,7 @@ a.logo {
 }
 
 .headerMainInfo {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   gap: 0px 0px;
@@ -101,7 +105,7 @@ a.logo {
 
 .slideWrapper {
   padding-top: 10px;
-  width: 780px;
+  max-width: 780px;
   height: 400px;
   margin: 0 auto;
   margin-left: 90px;
@@ -134,7 +138,7 @@ a.logo {
 }
 
 .hotHeader h4 {
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
@@ -193,14 +197,14 @@ a:hover {
 }
 
 .aboutCompanyHeader div {
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
 .aboutCompany {
   text-indent: 1.5em;
   font-size: 15px;
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
   padding-top: 15px;
 }
@@ -215,7 +219,7 @@ footer {
 }
 
 .contacts {
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
   font-size: 17px;
   font-weight: bold;
@@ -223,7 +227,7 @@ footer {
 }
 .contactsInfo {
   line-height: 1.8em;
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
   font-size: 14px;
 }
@@ -238,14 +242,14 @@ footer {
 }
 
 .mapHeader h4 {
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
 .map {
   text-indent: 1.5em;
   font-size: 18px;
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
   padding-top: 15px;
 }
@@ -281,7 +285,7 @@ footer {
 .aboutCompanyDocs .docs {
   text-indent: 1.5em;
   font-size: 15px;
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
   padding-top: 15px;
 }
@@ -372,4 +376,216 @@ footer {
 
 .popupText a:hover {
   color: aqua;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapperAll {
+    max-width: 970px;
+    padding: 0 30px;
+  }
+  .wrapper {
+    max-width: 900px;
+  }
+  /* .map {
+    max-width: 900px;
+  } */
+  .mapHeader h4,
+  .aboutCompanyHeader div,
+  .hotHeader h4 {
+    width: 900px;
+  }
+  .slideWrapper {
+    padding-top: 35px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .headerMainInfo {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-right: 100px;
+  }
+  .rubricator {
+    margin-right: 90px;
+  }
+
+  .squareRightInfo li {
+    color: #fff;
+    list-style: square;
+    font-size: 14px;
+    margin-left: 80px;
+    margin-right: 15px;
+    padding-top: 5px;
+    margin-top: 20px;
+  }
+  /* body.lock {
+      padding-left: 184px;
+    } */
+  .aboutCompany {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  iframe {
+    max-width: 900px;
+  }
+
+  .contacts {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .contactsInfo {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  .aboutCompanyFon {
+    height: 230px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrapperAll {
+    max-width: 750px;
+    padding: 0 30px;
+  }
+  .wrapper {
+    max-width: 690px;
+  }
+
+  .mapHeader h4,
+  .aboutCompanyHeader div,
+  .hotHeader h4 {
+    width: 700px;
+  }
+
+  .slideWrapper {
+    padding-top: 90px;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .headerMainInfo {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-right: 100px;
+  }
+  .rubricator {
+    margin-right: 55px;
+  }
+
+  .squareRightInfo li {
+    color: #fff;
+    list-style: square;
+    font-size: 14px;
+    margin-left: 60px;
+    margin-right: 15px;
+    padding-top: 5px;
+    margin-top: 20px;
+  }
+  .aboutCompany {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  /* .map {
+    max-width: 650px;
+  } */
+  iframe {
+    max-width: 650px;
+  }
+
+  .contacts {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .contactsInfo {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  .slogan {
+    font-size: 16px;
+  }
+
+  .skidka {
+    font-size: 14px;
+  }
+
+  .aboutCompanyFon {
+    height: 230px;
+  }
+
+  .hotWrapper {
+    max-width: 700px;
+  }
+  .hotWrapper div img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapperAll {
+    max-width: none;
+  }
+
+  .adress,
+  .headerInfo {
+    display: none;
+  }
+
+  .logo a {
+    float: center;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  .headerMainInfo {
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+  }
+  .squareRightInfo {
+    display: none;
+  }
+  .slogan,
+  .skidka {
+    margin-left: 0;
+  }
+  .slogan {
+    font-size: 14px;
+  }
+  .skidka {
+    font-size: 12px;
+  }
+  .hotFon {
+    height: 100%;
+    background: repeat-y;
+  }
+  .hotWrapper {
+    display: block;
+  }
+  .hotWrapper div img {
+    width: 200px;
+    height: 200px;
+  }
+  .aboutCompanyFon {
+    height: 100%;
+    background: repeat-y;
+  }
+  /* .map {
+    max-width: 250px;
+  } */
+  iframe {
+    max-width: 220px;
+    max-height: 250px;
+  }
+
+  /* .popupBody {
+    justify-content: flex-start;
+  } */
+
+  footer {
+    height: 100%;
+  }
 }
