@@ -9,6 +9,10 @@ body {
   height: 100%;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: #808080;
@@ -26,12 +30,17 @@ header {
 }
 
 .headerLogo {
-  width: 350px;
+  width: 300px;
   height: 68px;
+  line-height: 1.2em;
 }
 
 a.logo {
   font-size: 17px;
+}
+
+.adress {
+  font-size: 12px;
 }
 
 .headerInfo {
@@ -57,8 +66,8 @@ a.logo {
   color: #fff;
   list-style: square;
   font-size: 14px;
-  margin-left: 90px;
-  margin-top: 30px;
+  margin-left: 130px;
+  margin-top: 25px;
 }
 
 .rubricator {
@@ -95,6 +104,7 @@ a.logo {
   width: 780px;
   height: 400px;
   margin: 0 auto;
+  margin-left: 90px;
   position: relative;
 }
 
@@ -209,9 +219,10 @@ footer {
   margin: 0 auto;
   font-size: 17px;
   font-weight: bold;
-  padding: 15px;
+  padding: 10px;
 }
 .contactsInfo {
+  line-height: 1.8em;
   width: 1180px;
   margin: 0 auto;
   font-size: 14px;
@@ -279,4 +290,86 @@ footer {
   color: #000;
   font-size: 20px;
   line-height: 2em;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup.open .popupContent {
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  opacity: 1;
+}
+
+.popupArea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.popupBody {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+  transition: all 0.8s ease 0s;
+}
+.popupContent {
+  background: #fff;
+  color: #000;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.popupContentImage {
+  padding: 0;
+}
+.popupImage img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.popupClose {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+}
+.popupTitle {
+  font-size: 40px;
+  margin: 0px 0px 16px 0px;
+}
+
+.popupText {
+  font-size: 18px;
+}
+
+.popupText a {
+  color: #000;
+  font-style: italic;
+}
+
+.popupText a:hover {
+  color: aqua;
 }

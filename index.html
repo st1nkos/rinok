@@ -15,11 +15,12 @@
     <title>ОАО «Городской рынок»</title>
   </head>
   <body>
+    <div class="wrapperAll">
     <div class="wrapper">
       <header>
         <div class="headerLogo">
           <a href="/" class="logo"
-            >Торговый комплекс «Лыковский» Снежинск Челябинская область
+            >Торговый комплекс «Лыковский» Снежинск Челябинская область <br> <span class="adress">почтовый адрес 456776, Челябинская область, г. Снежинск, ул. Академика Забабахина, 17, а/я 984</span>
         </a>
         </div>
         <div>
@@ -29,7 +30,7 @@
             <a href="mailto:andrey.ermakov.0768@yandex.ru"
               >andrey.ermakov.0768@yandex.ru</a
             >
-          </h3>
+          </h4>
         </div>
       </header>
     </div>
@@ -79,20 +80,29 @@
         <div class="skidka">
           <h3>
             Первые три месяца скидка за аренду 30%
-            <img src="Img/icon.png" alt="">
+           <a href="#popup" class="popupLink"><img src="Img/icon.png" alt=""></a> 
           </h3>
         </div>
         <div class="hotWrapper">
           <div>
-            <img src="/Img/prilavok.jpg" alt="торговый прилавок">
+            <a href="#image" class="contetnImage popupLink">
+              <img src="/Img/prilavok.jpg" alt="торговый прилавок">
+            </a>
+            
             <p>торговый прилавок</p>
           </div>
           <div>
-            <img src="/Img/oppenPrilavok.jpg" alt="открытый прилавок">
+            <a href="#image2" class="contetnImage popupLink">
+              <img src="/Img/oppenPrilavok.jpg" alt="открытый прилавок">
+            </a>
+            
             <p>открытый прилавок</p>
           </div>
           <div>
-            <img src="/Img/closePrilavok.jpg"  alt="закрытый прилавок">
+            <a href="#image3" class="contetnImage popupLink">
+              <img src="/Img/closePrilavok.jpg"  alt="закрытый прилавок">
+            </a>
+            
             <p>закрытый прилавок</p>
           </div>
         </div>
@@ -142,9 +152,75 @@
           Управляющий торговым комплексом «Лыковский» : Елисеева Валентина
           Ивановна
         </div>
-        <div>Тел. +7(35146)7-41-65</div>
+        <div>Тел. +7(35146)7-10-58</div>
       </div>
     </footer>
+  </div>
+    <div id="popup" class="popup">
+    <a href="##" class="popupArea"></a>
+      <div class="popupBody">
+        <div class="popupContent">
+          <a href="##" class="popupClose closePopup">X</a>
+          <div class="popupTitle">Контактная информация</div>
+          <div class="popupText">
+            Генеральный директор: Ермаков Андрей Васильевич <br>
+            <span>E-Mail: <a href="mailto:andrey.ermakov.0768@yandex.ru"
+              >andrey.ermakov.0768@yandex.ru</a></span><br>
+            Телефон для связи: +7(35146) 7-41-63
+            <br> <br>
+            <span class="buhgalter">
+              Бухгалтерия: <br>
+              E-Mail: <a href="citymarket@mail.ru"
+              >citymarket@mail.ru</a></span><br>
+              Телефон для связи: +7(35146) 7-41-65
+            </span>
+            <br><br>
+            <span class="adminOfRinok">
+              Управляющий торговым комплексам «Лыковский»: Елисеева Валентина Ивановна <br>
+              E-Mail: <a href="mailto:vieliseeva56@mail.ru"
+              >vieliseeva56@mail.ru</a></span><br>
+              Телефон для связи: +7(35146) 7-10-58
+            </span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="image" class="popup">
+      <a href="##" class="popupArea"></a>
+        <div class="popupBody">
+          <div class="popupContent popupContentImage">
+            <a href="##" class="popupClose closePopup">X</a>
+            <div class="popupImage">
+              <img src="/Img/prilavok.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="image2" class="popup">
+        <a href="##" class="popupArea"></a>
+          <div class="popupBody">
+            <div class="popupContent popupContentImage">
+              <a href="##" class="popupClose closePopup">X</a>
+              <div class="popupImage">
+                <img src="/Img/oppenPrilavok.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="image3" class="popup">
+          <a href="##" class="popupArea"></a>
+            <div class="popupBody">
+              <div class="popupContent popupContentImage">
+                <a href="##" class="popupClose closePopup">X</a>
+                <div class="popupImage">
+                  <img src="/Img/closePrilavok.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+    
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.11.0.min.js"
@@ -158,5 +234,6 @@
       src="slick/slick.min.js"
     ></script>
     <script src="js/slider.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>

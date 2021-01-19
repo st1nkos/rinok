@@ -15,6 +15,7 @@
     <title>ОАО «Городской рынок»</title>
   </head>
   <body>
+    <div class="wrapperAll">
     <div class="wrapper">
       <header>
         <div class="headerLogo">
@@ -73,10 +74,25 @@
       </div>
       <div class="aboutCompanyPlan">
         <div class="plan">
-          <img src="../docs/shemaRinka.jpg" alt="">
+          <a href="#imageShema" class="contetnImage popupLink">
+            <img src="../docs/shemaRinka.jpg" alt="">
+          </a>
+          
         </div>
       </div>
     </div>
+  </div>
+    <div id="imageShema" class="popup">
+      <a href="##" class="popupArea"></a>
+        <div class="popupBody">
+          <div class="popupContent popupContentImage">
+            <a href="##" class="popupClose closePopup">X</a>
+            <div class="popupImage">
+              <img src="../Img/shemaRinka.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
     <footer>
       <div class="contacts" id="contacts">Контакты</div>
       <div class="contactsInfo">
@@ -101,6 +117,7 @@
       type="text/javascript"
       src="../slick/slick.min.js"
     ></script>
+    <script src="../js/popup.js"></script>
     <script src="../js/slider.js"></script>
   </body>
 </html>
